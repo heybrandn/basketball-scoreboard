@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Basketball Scoreboard - brandn</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 class="title">HOME</h3>
+                <h2 id="hScore" class="score">0</h2>
+                <div class="scrAdd">
+                    <button class="button" onclick="hAdd1()">+1</button>
+                    <button class="button" onclick="hAdd2()">+2</button>
+                    <button class="button" onclick="hAdd3()">+3</button>
+                </div>
+                <div class="scrSub">
+                    <button class="button" onclick="hSub1()">-1</button>
+                </div>
+            </div>
+            <div>
+                <h3 class="title">GUEST</h3>
+                <h2 id="gScore" class="score">0</h2>
+                <div class="scrAdd">
+                    <button class="button" onclick="gAdd1()">+1</button>
+                    <button class="button" onclick="gAdd2()">+2</button>
+                    <button class="button" onclick="gAdd3()">+3</button>
+                </div>
+                <div class="scrSub">
+                    <button class="button" onclick="gSub1()">-1</button>
+                </div>
+            </div>
+        </div>
+        <div class="reset">
+            <button class="reset resetButton" onclick="reset()">Reset</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
